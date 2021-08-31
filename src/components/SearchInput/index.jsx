@@ -10,8 +10,8 @@ const SearchInput = ({ onSearch }) => {
 
   return (
     <div className="SearchInput">
-      <input value={value} onChange={onSearchChange} />
-      <Button onClick={onSubmit}>Submit</Button>
+      <input placeholder="Let's try to find smth..." value={value} onChange={onSearchChange} />
+      <Button disabled={!!!value.trim()} onClick={onSubmit}>Submit</Button>
     </div>
   );
 };

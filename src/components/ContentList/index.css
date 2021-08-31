@@ -1,0 +1,29 @@
+.ContentList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding: 1.5rem;
+}
+
+.CharacterCard {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #e6e6fa;
+    cursor: default;
+    box-shadow: rgba(149, 157, 165, 0.4) 0 8px 24px;
+    transition: all .22s linear;
+}
+
+.CharacterCard:hover {
+    transform: scale(1.05);
+}
+
+.CharacterCard img {
+    width: 100%;
+}
+
+span {
+    color: #000;
+    font-size: 16px;
+}
+

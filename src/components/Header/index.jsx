@@ -4,9 +4,12 @@ import "./index.css";
 
 const Header = ({ onSearch }) => (
   <header className="Header">
-    <img src={logo} className="Header-logo" alt="logo" />
-    <SearchInput onSearch={onSearch} />
+    <div className="Header-inner">  {/* Guess its better to make it with js */}
+      <img src={logo} className="Header-logo" alt="logo" />
+      <SearchInput onSearch={onSearch} />
+    </div>
   </header>
+  
 );
 
 export default Header;
